@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="categorias.css">
+    <title>Lavado y cuidado del hogar</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="empresa">
+            <img src="Imágenes/logo.png" alt="Logo Volt Store">
+            <div class="titulo">
+                <h1>Lavado y cuidado del hogar</h1>
+                <h2>Siempre a la vanguardia</h2>
+            </div>
+        </div>
+
+        <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
+    
+        <ul>
+            <li><a href="elecDom.html">Volt Store</a></li>
+            <li class="dropdown">
+                <a href="#">Categorías</a>
+                <ul>
+                    <li><a href="#lavado">Lavado y secado</a></li>
+                    <li><a href="#cuidado">Cuidado de superficies</a></li>
+                    <li><a href="#clima">Climatización</a></li>
+                </ul>
+            </li>
+            <li><a href="#vendidos">Más vendidos</a></li>
+            <li><a href="#final">Contactos</a></li>
+            <li>
+                <input type="text" id="buscar" placeholder="Buscar...">
+            </li>
+    
+            <li class="auth-li-group">
+                <a href="carrito.html" class="btn-login-nav">Carrito</a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="titulo">
+        <h1>Lavado y cuidado del hogar</h1>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#lavado">
+                        <img src="Imágenes/lavado/cara1.png" class="d-block w-100" alt="Lavado y secado">
+                    </a>
+                    <div class="carousel-caption d-block">
+                        <h5>Lavado y secado</h5>
+                        <p>Encuentra lavadoras y secadoras de las mejores marcas.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#cuidado">
+                        <img src="Imágenes/lavado/cara2.png" class="d-block w-100" alt="Cuidado de superficies">
+                    </a>
+                    <div class="carousel-caption d-block">
+                        <h5>Cuidado de superficies</h5>
+                        <p>Todo para mantener tu hogar limpio y reluciente.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#clima">
+                        <img src="Imágenes/lavado/cara3.png" class="d-block w-100" alt="Climatización">
+                    </a>
+                    <div class="carousel-caption d-block">
+                        <h5>Climatización</h5>
+                        <p>Soluciones de clima para cada espacio de la casa.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="catalogo">
+        <div class="seccion-titulo" id="lavado">
+            <h2>Lavado y secado</h2>
+            <hr>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-001">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ELavado%3C/text%3E%3C/svg%3E" alt="Lavadora Samsung">
+            <div class="cuerpo">
+                <h2>Lavadora Samsung WF560</h2>
+                <h4>Samsung</h4>
+                <hr>
+                <ul>
+                    <li>Lavadora frontal de 9 kg con tecnología EcoBubble.</li>
+                    <li>Motor Digital Inverter con 10 años de garantía.</li>
+                    <li>Programa de lavado rápido 15 minutos y vapor antiarrugas.</li>
+                </ul>
+                <p>Precio: Bs. 4,750</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-002">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESecado%3C/text%3E%3C/svg%3E" alt="Secadora LG">
+            <div class="cuerpo">
+                <h2>Secadora LG DLEX3700</h2>
+                <h4>LG</h4>
+                <hr>
+                <ul>
+                    <li>Secadora de condensación 10.5 kg con sensor de secado.</li>
+                    <li>Función TurboWash y ciclo Steam Refresh para prendas delicadas.</li>
+                    <li>Pantalla táctil y conexión Wi-Fi para control inteligente.</li>
+                </ul>
+                <p>Precio: Bs. 6,100</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-003">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ELavadora%3C/text%3E%3C/svg%3E" alt="Lavadora Whirlpool">
+            <div class="cuerpo">
+                <h2>Lavadora Whirlpool 8kg</h2>
+                <h4>Whirlpool</h4>
+                <hr>
+                <ul>
+                    <li>Lavadora con 12 ciclos y control de espuma avanzada.</li>
+                    <li>Panel digital con opción de lavado a baja temperatura.</li>
+                    <li>Tambor de acero inoxidable resistente y silencioso.</li>
+                </ul>
+                <p>Precio: Bs. 3,950</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-004">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESecadora%3C/text%3E%3C/svg%3E" alt="Secadora Electrolux">
+            <div class="cuerpo">
+                <h2>Secadora Electrolux 9kg</h2>
+                <h4>Electrolux</h4>
+                <hr>
+                <ul>
+                    <li>Secado a aire caliente con sensor de humedad FreshCare.</li>
+                    <li>Ciclo antiarrugas y programación diferida hasta 20 horas.</li>
+                    <li>Filtro de pelusa de fácil limpieza y puerta reversible.</li>
+                </ul>
+                <p>Precio: Bs. 5,400</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-005">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ELavado%3C/text%3E%3C/svg%3E" alt="Lavadora Midea">
+            <div class="cuerpo">
+                <h2>Lavadora Midea 9kg</h2>
+                <h4>Midea</h4>
+                <hr>
+                <ul>
+                    <li>Lavadora con tambor de gran capacidad y lavado intensivo.</li>
+                    <li>Programa de vapor antiácaros y ciclo de desinfección.</li>
+                    <li>Panel táctil simple y función de lavado rápido 30 minutos.</li>
+                </ul>
+                <p>Precio: Bs. 3,390</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-006">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESecado%3C/text%3E%3C/svg%3E" alt="Secadora Bosch">
+            <div class="cuerpo">
+                <h2>Secadora Bosch 8kg</h2>
+                <h4>Bosch</h4>
+                <hr>
+                <ul>
+                    <li>Secadora con tecnología AutoDry para secado preciso.</li>
+                    <li>Programa rápido 40 min y modo de secado delicado.</li>
+                    <li>Panel LED con selección de cinco niveles de secado.</li>
+                </ul>
+                <p>Precio: Bs. 5,950</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-007">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ELavadora%3C/text%3E%3C/svg%3E" alt="Lavadora Whirlpool portátil">
+            <div class="cuerpo">
+                <h2>Lavadora portátil Whirlpool</h2>
+                <h4>Whirlpool</h4>
+                <hr>
+                <ul>
+                    <li>Mini lavadora de 5 kg ideal para departamentos pequeños.</li>
+                    <li>Ciclo de lavado rápido y función de centrifugado integrado.</li>
+                    <li>Fácil de instalar y mover con conexiones universales.</li>
+                </ul>
+                <p>Precio: Bs. 1,850</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-008">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESecado%3C/text%3E%3C/svg%3E" alt="Secadora Haier">
+            <div class="cuerpo">
+                <h2>Secadora Haier 10kg</h2>
+                <h4>Haier</h4>
+                <hr>
+                <ul>
+                    <li>Secadora con sensor de humedad y 9 programas automáticos.</li>
+                    <li>Ventilación múltiple para un secado homogéneo y rápido.</li>
+                    <li>Puerta de vidrio transparente y luz interior para mejor control.</li>
+                </ul>
+                <p>Precio: Bs. 6,400</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-009">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ELavadora%3C/text%3E%3C/svg%3E" alt="Lavadora Bosch">
+            <div class="cuerpo">
+                <h2>Lavadora Bosch 10kg</h2>
+                <h4>Bosch</h4>
+                <hr>
+                <ul>
+                    <li>Lavadora con sistema ActiveOxygen para limpieza profunda.</li>
+                    <li>Programa EcoSilence Drive para funcionamiento silencioso.</li>
+                    <li>Panel táctil y ciclo antihongos para mantenimiento del tambor.</li>
+                </ul>
+                <p>Precio: Bs. 5,700</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-010">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESecado%3C/text%3E%3C/svg%3E" alt="Secadora Whirlpool">
+            <div class="cuerpo">
+                <h2>Secadora Whirlpool 7kg</h2>
+                <h4>Whirlpool</h4>
+                <hr>
+                <ul>
+                    <li>Secadora compacta con sistema de ventilación tradicional.</li>
+                    <li>Ciclos de secado rápido y delicado para prendas pequeñas.</li>
+                    <li>Función antiarrugas y filtro de pelusa fácil de limpiar.</li>
+                </ul>
+                <p>Precio: Bs. 3,750</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-011">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ELavadora%3C/text%3E%3C/svg%3E" alt="Lavadora Panasonic">
+            <div class="cuerpo">
+                <h2>Lavadora Panasonic 8kg</h2>
+                <h4>Panasonic</h4>
+                <hr>
+                <ul>
+                    <li>Lavadora con tecnología StainMaster para manchas difíciles.</li>
+                    <li>Ciclo de lavado suave con control de espuma automático.</li>
+                    <li>Diseño compacto y filtro antipelusas integrado.</li>
+                </ul>
+                <p>Precio: Bs. 4,200</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-012">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESecado%3C/text%3E%3C/svg%3E" alt="Secadora Daewoo">
+            <div class="cuerpo">
+                <h2>Secadora Daewoo 8kg</h2>
+                <h4>Daewoo</h4>
+                <hr>
+                <ul>
+                    <li>Secadora con termostato ajustable y 8 programas de secado.</li>
+                    <li>Sensor de humedad inteligente y función de secado eco.</li>
+                    <li>Puerta de carga frontal con apertura suave y sistema anti-tirones.</li>
+                </ul>
+                <p>Precio: Bs. 4,100</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-013">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ELavadora%3C/text%3E%3C/svg%3E" alt="Lavadora Samsung AddWash">
+            <div class="cuerpo">
+                <h2>Lavadora Samsung AddWash 10kg</h2>
+                <h4>Samsung</h4>
+                <hr>
+                <ul>
+                    <li>Lavadora frontal con puerta adicional AddWash para carga rápida.</li>
+                    <li>Función Bubble Soak contra manchas difíciles y lavadora silenciosa.</li>
+                    <li>Programa Super Speed 39 minutos para cargas ligeras.</li>
+                </ul>
+                <p>Precio: Bs. 6,350</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-014">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ELavado%3C/text%3E%3C/svg%3E" alt="Lavadora Hoover">
+            <div class="cuerpo">
+                <h2>Lavadora Hoover 9kg</h2>
+                <h4>Hoover</h4>
+                <hr>
+                <ul>
+                    <li>Lavadora con tecnología SensorMix y 14 programas automáticos.</li>
+                    <li>Control con panel digital y función de lavado al vapor.</li>
+                    <li>Temporizador de inicio diferido y consumo reducido de agua.</li>
+                </ul>
+                <p>Precio: Bs. 3,850</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="lavado" data-id="prod-015">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESecado%3C/text%3E%3C/svg%3E" alt="Secadora Frigidaire">
+            <div class="cuerpo">
+                <h2>Secadora Frigidaire 11kg</h2>
+                <h4>Frigidaire</h4>
+                <hr>
+                <ul>
+                    <li>Secadora de bomba de calor con eficiencia energética A++.</li>
+                    <li>Capacidad de 11 kg y función Sensor Dry para controlar el tiempo.</li>
+                    <li>Temporizador de fin diferido y ciclo antiarrugas profesional.</li>
+                </ul>
+                <p>Precio: Bs. 7,100</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-titulo" id="cuidado">
+            <h2>Cuidado de superficies</h2>
+            <hr>
+        </div>
+
+        <div class="card" data-categoria="cuidado" data-id="prod-016">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EVacío%3C/text%3E%3C/svg%3E" alt="Aspiradora Dyson">
+            <div class="cuerpo">
+                <h2>Aspiradora Dyson V15</h2>
+                <h4>Dyson</h4>
+                <hr>
+                <ul>
+                    <li>Aspiradora inalámbrica con sensor piezo para diagnóstico del polvo.</li>
+                    <li>Potencia ciclónica para succión profunda en alfombras y pisos duros.</li>
+                    <li>Incluye cabezal motorizado, minicepillo y accesorio para pelo de mascota.</li>
+                </ul>
+                <p>Precio: Bs. 8,900</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cuidado" data-id="prod-017">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ERobot%3C/text%3E%3C/svg%3E" alt="Robot aspirador iRobot">
+            <div class="cuerpo">
+                <h2>Robot aspirador Roomba i3</h2>
+                <h4>iRobot</h4>
+                <hr>
+                <ul>
+                    <li>Robot autónomo con limpieza programable y mapeo inteligente.</li>
+                    <li>Ideal para pisos duros y alfombras de pelo corto.</li>
+                    <li>Compatible con asistentes de voz y estación de carga automática.</li>
+                </ul>
+                <p>Precio: Bs. 5,800</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cuidado" data-id="prod-018">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESteam%3C/text%3E%3C/svg%3E" alt="Limpiadora a vapor Karcher">
+            <div class="cuerpo">
+                <h2>Limpiadora a vapor Karcher SC3</h2>
+                <h4>Karcher</h4>
+                <hr>
+                <ul>
+                    <li>Limpiadora a vapor para pisos, baños y superficies duras.</li>
+                    <li>Calentamiento rápido en 30 segundos y vapor continuo ajustable.</li>
+                    <li>Depósito de agua extraíble y accesorios para múltiples usos.</li>
+                </ul>
+                <p>Precio: Bs. 3,250</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cuidado" data-id="prod-019">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EBatidora%3C/text%3E%3C/svg%3E" alt="Pulidora Black+Decker">
+            <div class="cuerpo">
+                <h2>Pulidora Black+Decker</h2>
+                <h4>Black+Decker</h4>
+                <hr>
+                <ul>
+                    <li>Pulidora multiuso para muebles y superficies metálicas.</li>
+                    <li>2 velocidades y disco de pulido intercambiable.</li>
+                    <li>Mango auxiliar extraíble para mayor comodidad de uso.</li>
+                </ul>
+                <p>Precio: Bs. 820</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cuidado" data-id="prod-020">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ELimpiadora%3C/text%3E%3C/svg%3E" alt="Pulidora Philips">
+            <div class="cuerpo">
+                <h2>Limpiadora Philips FC6723</h2>
+                <h4>Philips</h4>
+                <hr>
+                <ul>
+                    <li>Aspiradora de poste con filtro HEPA para aire más limpio.</li>
+                    <li>Tecnología PowerCyclone 7 para succión constante y potente.</li>
+                    <li>Boquilla TriActive para pisos duros y alfombras en una pasada.</li>
+                </ul>
+                <p>Precio: Bs. 1,350</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cuidado" data-id="prod-021">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ERobot%3C/text%3E%3C/svg%3E" alt="Robot limpiador Xiaomi">
+            <div class="cuerpo">
+                <h2>Robot limpiador Xiaomi</h2>
+                <h4>Xiaomi</h4>
+                <hr>
+                <ul>
+                    <li>Robot mop con limpieza húmeda y aspiración combinada.</li>
+                    <li>Planificación por app y detección de obstáculos inteligente.</li>
+                    <li>Base de carga automática y modo silencioso para la noche.</li>
+                </ul>
+                <p>Precio: Bs. 2,680</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cuidado" data-id="prod-022">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EAspiradora%3C/text%3E%3C/svg%3E" alt="Aspiradora Bissell">
+            <div class="cuerpo">
+                <h2>Aspiradora Bissell MultiClean</h2>
+                <h4>Bissell</h4>
+                <hr>
+                <ul>
+                    <li>Aspiradora vertical con función 2 en 1 para piso y tapicería.</li>
+                    <li>Depósito sin bolsa y filtro lavable de larga duración.</li>
+                    <li>Accesorios para esquinas, rendijas y cepillo para pelos.</li>
+                </ul>
+                <p>Precio: Bs. 1,250</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cuidado" data-id="prod-023">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ELimpiador%3C/text%3E%3C/svg%3E" alt="Limpiador vapor Philips">
+            <div class="cuerpo">
+                <h2>Limpiador a vapor Philips</h2>
+                <h4>Philips</h4>
+                <hr>
+                <ul>
+                    <li>Limpiador a vapor portátil para planchas y superficies delicadas.</li>
+                    <li>Depósito de 200 ml con mezcla de vapor continua y rápida.</li>
+                    <li>Boquilla anti-goteo para uso seguro en telas y cortinas.</li>
+                </ul>
+                <p>Precio: Bs. 980</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cuidado" data-id="prod-024">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EPolvo%3C/text%3E%3C/svg%3E" alt="Set limpieza Karcher">
+            <div class="cuerpo">
+                <h2>Set de limpieza Karcher</h2>
+                <h4>Karcher</h4>
+                <hr>
+                <ul>
+                    <li>Kit completo con cepillo, mopa, paños microfibra y pulverizador.</li>
+                    <li>Ideal para pisos, azulejos y vidrio con acabado sin rayas.</li>
+                    <li>Incluye balde con escurridor anti-goteo y accesorios de extensión.</li>
+                </ul>
+                <p>Precio: Bs. 660</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cuidado" data-id="prod-025">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EMopa%3C/text%3E%3C/svg%3E" alt="Mopa Vileda">
+            <div class="cuerpo">
+                <h2>Mopa plana Vileda</h2>
+                <h4>Vileda</h4>
+                <hr>
+                <ul>
+                    <li>Mopa de microfibra con cabezal giratorio de 360°.</li>
+                    <li>Incluye dos fundas lavables y depósito escurre sin contacto.</li>
+                    <li>Perfecta para madera, cerámica y pisos laminados.</li>
+                </ul>
+                <p>Precio: Bs. 520</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cuidado" data-id="prod-026">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EVap%3C/text%3E%3C/svg%3E" alt="Plancha a vapor Philips">
+            <div class="cuerpo">
+                <h2>Plancha a vapor Philips</h2>
+                <h4>Philips</h4>
+                <hr>
+                <ul>
+                    <li>Plancha de alta presión con suela de cerámica antiadherente.</li>
+                    <li>Golpe de vapor de 180 g y sistema antigoteo integrado.</li>
+                    <li>Control de temperatura variable para telas delicadas y gruesas.</li>
+                </ul>
+                <p>Precio: Bs. 850</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cuidado" data-id="prod-027">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EMopa%3C/text%3E%3C/svg%3E" alt="Mopa steam Black+Decker">
+            <div class="cuerpo">
+                <h2>Mopa a vapor Black+Decker</h2>
+                <h4>Black+Decker</h4>
+                <hr>
+                <ul>
+                    <li>Mopa vapor 2 en 1 para pisos y superficies verticales.</li>
+                    <li>Calentamiento rápido de 15 segundos con control de vapor.</li>
+                    <li>Depósito de 450 ml para limpiezas prolongadas sin recargas.</li>
+                </ul>
+                <p>Precio: Bs. 1,290</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cuidado" data-id="prod-028">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EAspiradora%3C/text%3E%3C/svg%3E" alt="Aspiradora Shark">
+            <div class="cuerpo">
+                <h2>Aspiradora Shark IZ201</h2>
+                <h4>Shark</h4>
+                <hr>
+                <ul>
+                    <li>Aspiradora sin cable con tecnología DuoClean para pisos mixtos.</li>
+                    <li>Depósito amplio y base de carga con almacenamiento de accesorios.
+</li>
+                    <li>Filtro lavable con 5 niveles de limpieza para aire más puro.</li>
+                </ul>
+                <p>Precio: Bs. 4,320</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-titulo" id="clima">
+            <h2>Climatización</h2>
+            <hr>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-029">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EAire%3C/text%3E%3C/svg%3E" alt="Aire acondicionado Samsung">
+            <div class="cuerpo">
+                <h2>Aire acondicionado Samsung 12K</h2>
+                <h4>Samsung</h4>
+                <hr>
+                <ul>
+                    <li>Aire split 12.000 BTU con tecnología Digital Inverter.</li>
+                    <li>Modo Good Sleep y filtro de alta densidad anti-polvo.</li>
+                    <li>Control remoto y programación semanal inteligente.</li>
+                </ul>
+                <p>Precio: Bs. 5,450</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-030">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EHeater%3C/text%3E%3C/svg%3E" alt="Calefactor DeLonghi">
+            <div class="cuerpo">
+                <h2>Calefactor DeLonghi HFX65</h2>
+                <h4>DeLonghi</h4>
+                <hr>
+                <ul>
+                    <li>Calefactor cerámico portátil con termostato regulable.</li>
+                    <li>3 niveles de potencia y apagado automático por vuelco.</li>
+                    <li>Diseño compacto con mango integrado para transporte fácil.</li>
+                </ul>
+                <p>Precio: Bs. 1,150</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-031">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EPurificador%3C/text%3E%3C/svg%3E" alt="Purificador Xiaomi">
+            <div class="cuerpo">
+                <h2>Purificador Xiaomi Mi Air</h2>
+                <h4>Xiaomi</h4>
+                <hr>
+                <ul>
+                    <li>Purificador con filtro HEPA H13 y control por app.</li>
+                    <li>Captura PM2.5, polvo fino, polen y alérgenos domésticos.</li>
+                    <li>Modo nocturno silencioso y temporizador programable.</li>
+                </ul>
+                <p>Precio: Bs. 1,950</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-032">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EVentilador%3C/text%3E%3C/svg%3E" alt="Ventilador Dyson">
+            <div class="cuerpo">
+                <h2>Ventilador Dyson AM07</h2>
+                <h4>Dyson</h4>
+                <hr>
+                <ul>
+                    <li>Ventilador sin aspas con flujo de aire suave y silencioso.</li>
+                    <li>Control remoto y temporizador de apagado automático.</li>
+                    <li>Fácil de limpiar gracias a su diseño sin hélices.</li>
+                </ul>
+                <p>Precio: Bs. 2,650</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-033">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EAire%3C/text%3E%3C/svg%3E" alt="Aire acondicionado Midea">
+            <div class="cuerpo">
+                <h2>Aire acondicionado Midea 18K</h2>
+                <h4>Midea</h4>
+                <hr>
+                <ul>
+                    <li>Aire split 18.000 BTU con modo económico y turbo frío.</li>
+                    <li>Filtro de carbón activado y display LED exterior.</li>
+                    <li>Función auto-limpieza y señal de alerta de mantenimiento.</li>
+                </ul>
+                <p>Precio: Bs. 7,200</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-034">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EDeshumidificador%3C/text%3E%3C/svg%3E" alt="Deshumidificador DeLonghi">
+            <div class="cuerpo">
+                <h2>Deshumidificador DeLonghi</h2>
+                <h4>DeLonghi</h4>
+                <hr>
+                <ul>
+                    <li>Deshumidificador para espacios medianos con 12 litros/día.</li>
+                    <li>Modo anti-moho y señal de depósito lleno para mantenimiento fácil.</li>
+                    <li>Ruedas integradas y sistema de drenaje continuo opcional.</li>
+                </ul>
+                <p>Precio: Bs. 3,350</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-035">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EAire%3C/text%3E%3C/svg%3E" alt="Aire acondicionado LG">
+            <div class="cuerpo">
+                <h2>Aire acondicionado LG 9K</h2>
+                <h4>LG</h4>
+                <hr>
+                <ul>
+                    <li>Split 9.000 BTU con modo Quiet y filtro de autoclean.</li>
+                    <li>Modo ahorro de energía y control a distancia por app SmartThinQ.</li>
+                    <li>Diseño compacto ideal para dormitorios y oficinas pequeñas.</li>
+                </ul>
+                <p>Precio: Bs. 4,980</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-036">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EAire%3C/text%3E%3C/svg%3E" alt="Aire acondicionado Hisense">
+            <div class="cuerpo">
+                <h2>Aire acondicionado Hisense 14K</h2>
+                <h4>Hisense</h4>
+                <hr>
+                <ul>
+                    <li>Split 14.000 BTU con tecnología inverter y modo Turbo.</li>
+                    <li>Filtro antibacterial washable y distribución de aire 3D.</li>
+                    <li>Control remoto con pantalla LED y modo Sleep Comfort.</li>
+                </ul>
+                <p>Precio: Bs. 6,300</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-037">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EAire%3C/text%3E%3C/svg%3E" alt="Aire acondicionado Whirlpool">
+            <div class="cuerpo">
+                <h2>Aire acondicionado Whirlpool 24K</h2>
+                <h4>Whirlpool</h4>
+                <hr>
+                <ul>
+                    <li>Split 24.000 BTU con función 6th Sense para ajuste automático.</li>
+                    <li>Modo silencioso nocturno y filtro lavable de 3 etapas.</li>
+                    <li>Control remoto con modo de ahorro máximo y display LED.</li>
+                </ul>
+                <p>Precio: Bs. 9,300</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-038">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EHumidificador%3C/text%3E%3C/svg%3E" alt="Humidificador Honeywell">
+            <div class="cuerpo">
+                <h2>Humidificador Honeywell</h2>
+                <h4>Honeywell</h4>
+                <hr>
+                <ul>
+                    <li>Humidificador ultrasónico para habitaciones de hasta 35 m².</li>
+                    <li>Tanque de 3.8 litros y funcionamiento silencioso sin ruido.</li>
+                    <li>Control de vapor ajustable y apagado automático al agotarse el agua.</li>
+                </ul>
+                <p>Precio: Bs. 1,200</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-039">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EAire%3C/text%3E%3C/svg%3E" alt="Aire acondiciona Hisense portátil">
+            <div class="cuerpo">
+                <h2>Aire acondicionado portátil Hisense</h2>
+                <h4>Hisense</h4>
+                <hr>
+                <ul>
+                    <li>Equipo portátil 12.000 BTU con ruedas y manguera de escape.</li>
+                    <li>Función de deshumidificación y temporizador 24 horas.</li>
+                    <li>Modo Eco y control remoto con pantalla LED integrada.</li>
+                </ul>
+                <p>Precio: Bs. 3,150</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-040">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EVentilador%3C/text%3E%3C/svg%3E" alt="Ventilador Midea">
+            <div class="cuerpo">
+                <h2>Ventilador Midea de pedestal</h2>
+                <h4>Midea</h4>
+                <hr>
+                <ul>
+                    <li>Ventilador de pedestal con 5 velocidades y oscilación automática.</li>
+                    <li>Control remoto y temporizador de apagado de 7.5 horas.</li>
+                    <li>Diseño compacto y base estable para espacios amplios.</li>
+                </ul>
+                <p>Precio: Bs. 680</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-041">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EAire%3C/text%3E%3C/svg%3E" alt="Humidificador Philips">
+            <div class="cuerpo">
+                <h2>Humidificador Philips Series 2000</h2>
+                <h4>Philips</h4>
+                <hr>
+                <ul>
+                    <li>Humidificador ultrasónico con sensor de humedad inteligente.</li>
+                    <li>Funcionamiento ultra silencioso y tanque de 2.5 litros.</li>
+                    <li>Modo nocturno y filtro antibacteriano para aire más limpio.</li>
+                </ul>
+                <p>Precio: Bs. 1,330</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-042">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EAire%3C/text%3E%3C/svg%3E" alt="Aire acondicionado Carrier">
+            <div class="cuerpo">
+                <h2>Aire acondicionado Carrier 9K</h2>
+                <h4>Carrier</h4>
+                <hr>
+                <ul>
+                    <li>Split 9.000 BTU con función de deshumidificación y control remoto.</li>
+                    <li>Filtro Cold Plasma para aire libre de bacterias y olores.</li>
+                    <li>Diseño silencioso para dormitorios y ambientes pequeños.</li>
+                </ul>
+                <p>Precio: Bs. 5,150</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-043">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EAire%3C/text%3E%3C/svg%3E" alt="Aire acondicionado York">
+            <div class="cuerpo">
+                <h2>Aire acondicionado York 14K</h2>
+                <h4>York</h4>
+                <hr>
+                <ul>
+                    <li>Split de 14.000 BTU con auto-limpieza y modo confort.</li>
+                    <li>Filtro anti-hongos y turbo frío para enfriar rápido.
+</li>
+                    <li>Control remoto con pantalla LCD y memoria de temperatura.</li>
+                </ul>
+                <p>Precio: Bs. 6,730</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-044">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EEco%3C/text%3E%3C/svg%3E" alt="Purificador Honeywell">
+            <div class="cuerpo">
+                <h2>Aire purificador Honeywell</h2>
+                <h4>Honeywell</h4>
+                <hr>
+                <ul>
+                    <li>Purificador de aire con filtro HEPA y carbón activado.</li>
+                    <li>Modo silencio y temporizador para operación de noche.
+</li>
+                    <li>Indicador de calidad de aire en tiempo real integrados.
+</li>
+                </ul>
+                <p>Precio: Bs. 2,150</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="climatizacion" data-id="prod-045">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EAire%3C/text%3E%3C/svg%3E" alt="Aire acondicionado Samsung portátil">
+            <div class="cuerpo">
+                <h2>Aire acondicionado portátil Samsung</h2>
+                <h4>Samsung</h4>
+                <hr>
+                <ul>
+                    <li>Portátil 10.000 BTU con doble manguera para mejor eficiencia.</li>
+                    <li>Función de enfriamiento y deshumidificación integrada.</li>
+                    <li>Controles digitales y ruedas giratorias para movilidad simple.</li>
+                </ul>
+                <p>Precio: Bs. 3,580</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <footer id="final">
+        <div class="links">
+            <h4>Soporte y Legal</h4>
+            <ul>
+                <li><a href="#">Terminos</a></li>
+                <li><a href="#">Políticas</a></li>
+                <li><a href="#">Dudas</a></li>
+                <li><a href="#">Licencias</a></li>
+            </ul>
+        </div>
+    
+        <div class="siguenos">
+            <h3>Síguenos</h3>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/reel/DYrqUy2zILf/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" target="_blank">
+                        <img src="Imágenes/instagram.jpeg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://vt.tiktok.com/ZSxqK8bVp/" target="_blank">
+                        <img src="Imágenes/tiktok.jpeg" alt="TikTok">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="Imágenes/whatsapp.png" alt="Whatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/dQw4w9WgXcQ?list=RDdQw4w9WgXcQ" target="_blank">
+                        <img src="Imágenes/youtube.jpeg" alt="Youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="contactos">
+            <h3>Contáctanos</h3>
+    
+            <div class="bloque-contacto">
+                <img src="Imágenes/teléfono.jpeg" alt="Teléfono">
+                <div class="contenido-contacto">
+                    <h4>Teléfonos y celulares</h4>
+                    <p>☎️ +591 12345678</p>
+                    <p>☎️ +591 27486995</p>
+                    <br>
+                    <p>📲 62509273</p>
+                    <p>📲 64850359</p>
+                </div>
+            </div>
+    
+            <div class="bloque-contacto">
+                <img src="Imágenes/correo.jpeg" alt="Correo">
+                <div class="contenido-contacto">
+                    <h4>Correo electrónico</h4>
+                    <p>volttech@.equisde.com</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <p>&copy; 2026 Volt Store. Todos los derechos reservados. Diseñado para la vanguardia del hogar.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="buscador.js"></script>
+    <script src="carrito-storage.js"></script>
+    <script src="funciones.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('header');
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            if (!header || !menuToggle) return;
+
+            menuToggle.addEventListener('click', function () {
+                const isOpen = header.classList.toggle('menu-open');
+                menuToggle.setAttribute('aria-expanded', isOpen);
+                menuToggle.textContent = isOpen ? '✕' : '☰';
+            });
+        });
+    </script>
+</body>
+</html>

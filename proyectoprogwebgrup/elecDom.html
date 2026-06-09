@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrodomésticos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="elecDom.css">
+</head>
+
+<body>
+    <header>
+        <div class="empresa">
+            <img src="Imágenes/logo.png" alt="Logo Volt Store">
+            <div class="titulo">
+                <h1>Volt Store</h1>
+                <h2>Siempre a la vanguardia</h2>
+            </div>
+        </div>
+
+        <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
+
+        <ul>
+            <li><a href="elecDom.html">Inicio</a></li>
+            <li class="dropdown">
+                <a href="#">Categorías</a>
+                <ul>
+                    <li><a href="cocina.html">Cocina</a></li>
+                    <li><a href="lavado.html">Hogar y Lavado</a></li>
+                    <li><a href="entretenimiento.html">Entretenimiento</a></li>
+                </ul>
+            </li>
+            <li><a href="#vendidos">Más vendidos</a></li>
+            <li><a href="#final">Contactos</a></li>
+            <li>
+                <input type="text" id="buscar" placeholder="Buscar...">
+            </li>
+
+            <li class="auth-li-group">
+                <a href="carrito.html" class="btn-login-nav">Carrito</a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="hero-carrusel">
+        <button id="izq" onclick="cambiarCara(-1)">
+            <i class="fa-solid fa-angle-left fa-lg"></i>
+        </button>
+        <button id="der" onclick="cambiarCara(1)">
+            <i class="fa-solid fa-angle-right fa-lg"></i>
+        </button>
+
+        <div class="caras activo" id="cara1">
+            <div class="texto-hero">
+                <h1>La comodidad en tu hogar, no es un lujo</h1>
+                <h2>Descubre nuestra selección de electrodomésticos de alta gama y obtén la comodidad que mereces</h2>
+                <p>
+                    Aquí en Volt Store con nuestra línea de productos para el hogar ofrecemos una amplia gama de
+                    electrodomésticos de alta calidad bien seleccionados, que combinan diseño, funcionalidad, tecnología
+                    siempre a la vanguardia y sobre todo, a un precio amigable con tu bolsillo.
+                </p>
+                <p>
+                    Desde refrigeradores inteligentes hasta lavadoras eficientes, nuestros electrodomésticos están
+                    diseñados
+                    para hacer tu hogar un lugar más cómodo y eficiente. Con características innovadoras y un
+                    rendimiento
+                    excepcional, nuestros productos te ayudarán a optimizar tu tiempo y disfrutar de tu espacio.
+                </p>
+            </div>
+
+            <div class="imagen-hero">
+                <div class="sombra-flotante"></div>
+                <img src="Imágenes/hero.webp" alt="Imagen de electrodomésticos">
+            </div>
+        </div>
+
+        <div class="caras" id="cara2">
+            <div class="texto-hero">
+                <h1>Cocina y Línea Blanca</h1>
+                <h2>Descubre nuestra selección de electrodomésticos para tu cocina</h2>
+                <p>
+                    En Volt Store, te ofrecemos nuestra amplia selección de electrodomésticos de diversas marcas para tu
+                    cocina que combinan diseño, funcionalidad y tecnología de vanguardia. Desde refrigeradores
+                    inteligentes
+                    hasta estufas de última generación, nuestros productos están diseñados para hacer tu experiencia
+                    culinaria más cómoda y eficiente.
+                </p>
+                <p>
+                    Con características innovadoras y un rendimiento excepcional, nuestros electrodomésticos te ayudarán
+                    a
+                    optimizar tu tiempo en la cocina y a disfrutar de comidas deliciosas de la manera más sencilla.
+                </p>
+                <a href="cocina.html" class="mas">Ver catálogo ➔</a>
+            </div>
+
+            <div class="imagen-hero">
+                <div class="sombra-flotante"></div>
+                <img src="Imágenes/cara2.png" alt="Cocina">
+            </div>
+        </div>
+
+        <div class="caras" id="cara3">
+            <div class="texto-hero">
+                <h1>Lavado y Cuidado del Hogar</h1>
+                <h2>Descubre nuestra selección de electrodomésticos para el lavado y cuidado de tu hogar</h2>
+                <p>
+                    Echa un vistazo al catálogo de electrodomésticos para el lavado y cuidado del hogar en Volt Store,
+                    que
+                    nuestros clientes merecen. Desde lavadoras de alta eficiencia energética hasta aspiradoras
+                    inteligentes,
+                    nuestros productos están diseñados para mantener tu hogar impecable.
+                </p>
+                <p>
+                    Descubre la comodidad y eficiencia que mereces con nuestra selección de electrodomésticos para el
+                    lavado
+                    y cuidado del hogar, optimizando el consumo de recursos y garantizando la máxima durabilidad.
+                </p>
+                <a href="lavado.html" class="mas">Ver catálogo ➔</a>
+            </div>
+
+            <div class="imagen-hero">
+                <div class="sombra-flotante"></div>
+                <img src="Imágenes/cara3.png" alt="Limpieza">
+            </div>
+        </div>
+
+        <div class="caras" id="cara4">
+            <div class="texto-hero">
+                <h1>Tecnología y Entretenimiento</h1>
+                <h2>Descubre nuestra selección de electrodomésticos de entretenimiento y tecnología</h2>
+                <p>
+                    En Volt Store, te ofrecemos una amplia gama de aparatos para un entretenimiento sin fin. Desde
+                    televisores inteligentes hasta sistemas de sonido envolvente, nuestros productos están diseñados
+                    para
+                    brindarte una experiencia de entretenimiento excepcional en la comodidad de tu hogar.
+                </p>
+                <p>
+                    Descubre la comodidad y el entretenimiento que mereces con nuestra selección de electrodomésticos de
+                    entretenimiento y tecnología, calibrados para la máxima fidelidad de audio y video.
+                </p>
+                <a href="entretenimiento.html" class="mas">Ver catálogo ➔</a>
+            </div>
+
+            <div class="imagen-hero">
+                <div class="sombra-flotante"></div>
+                <img src="Imágenes/cara4.png" alt="Entretenimiento">
+            </div>
+        </div>
+    </section>
+
+    <section class="masVendido" id="vendidos">
+        <h2>¡Lo más vendido!</h2>
+        <hr>
+        <div class="card" style="width: 18rem;">
+            <img src="Imágenes/TV LG 77-inch C5_oled evo IA.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4>LG</h4>
+                <h2 class="card-title">TV LG OLDED evo IA</h2>
+                <p class="card-text">
+                    TV LG de 77 pulgadas con tecnología OLDED evo IA, que ofrece una calidad de imagen excepcional
+                    y un rendimiento inteligente para una experiencia de entretenimiento inigualable.
+                </p>
+                <h1>Bs. 8,200</h1>
+                <a href="#" class="btn btn-primary">Ver en catálogo</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="Imágenes/Refrigerador samsung.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4>Samsung</h4>
+                <h2 class="card-title">Refrigerador Samsung Family Hub RF27</h2>
+                <p class="card-text">
+                    Refrigerador Samsung Family Hub con puerta francesa, modelo RF27, con tecnología inteligente que te
+                    permite
+                    controlar tu refrigerador desde tu teléfono, organizar tus alimentos y ten una experiencia de cocina
+                    más conectada.
+                </p>
+                <h1>Bs. 5,900</h1>
+                <a href="#" class="btn btn-primary">Ver en catálogo</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="Imágenes/lavadora Smart Lg 13kg  con IA.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4>LG</h4>
+                <h2 class="card-title">Lavadora Smart LG</h2>
+                <p class="card-text">
+                    Lavadora Smart LG de 13kg con tecnología inteligente que te permite
+                    controlar tu lavadora desde tu teléfono,
+                    organizar tus lavados y disfrutar de una experiencia de lavado más conectada y conveniente. Además
+                    cuenta con funciones de lavado inteligente potenciadas por IA para optimizar el rendimiento y cuidar
+                    tus prendas de manera eficiente.
+                </p>
+                <h1>Bs. 4,500</h1>
+                <a href="#" class="btn btn-primary">Ver en catálogo</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="Imágenes/Aspiradora Robótica LZRDZSW 1500Pa 3 en 1 con Carga Automática y Limpieza Inteligente para Ho_.jpeg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4>Xiaomi</h4>
+                <h2 class="card-title">Aspiradora Robótica Xiaomi</h2>
+                <p class="card-text">
+                    Aspiradora robótica Xiaomi con tecnología inteligente,
+                    organizar tus limpiezas y disfrutar de una experiencia de limpieza más conectada y conveniente.
+                    Además
+                    cuenta con funciones de lavado inteligente potenciadas por IA para optimizar el rendimiento y cuidar
+                    tus
+                    prendas de manera eficiente.
+                </p>
+                <h1>Bs. 1,500</h1>
+                <a href="#" class="btn btn-primary">Ver en catálogo</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="final">
+        <div class="links">
+            <h4>Soporte y Legal</h4>
+            <ul>
+                <li><a href="terminos.html">Terminos</a></li>
+                <li><a href="terminos.html">Políticas</a></li>
+                <li><a href="terminos.html">Dudas</a></li>
+                <li><a href="terminos.html">Licencias</a></li>
+            </ul>
+        </div>
+
+        <div class="siguenos">
+            <h3>Síguenos</h3>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/reel/DYrqUy2zILf/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ=="
+                        target="_blank">
+                        <img src="Imágenes/instagram.jpeg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://vt.tiktok.com/ZSxqK8bVp/" target="_blank">
+                        <img src="Imágenes/tiktok.jpeg" alt="TikTok">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="Imágenes/whatsapp.png" alt="Whatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/dQw4w9WgXcQ?list=RDdQw4w9WgXcQ" target="_blank">
+                        <img src="Imágenes/youtube.jpeg" alt="Youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contactos">
+            <h3>Contáctanos</h3>
+
+            <div class="bloque-contacto">
+                <img src="Imágenes/teléfono.jpeg" alt="Teléfono">
+                <div class="contenido-contacto">
+                    <h4>Teléfonos y celulares</h4>
+                    <p>☎️ +591 12345678</p>
+                    <p>☎️ +591 27486995</p>
+                    <br>
+                    <p>📲 62509273</p>
+                    <p>📲 64850359</p>
+                </div>
+            </div>
+
+            <div class="bloque-contacto">
+                <img src="Imágenes/correo.jpeg" alt="Correo">
+                <div class="contenido-contacto">
+                    <h4>Correo electrónico</h4>
+                    <p>volttech@.equisde.com</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 Volt Store. Todos los derechos reservados. Diseñado para la vanguardia del hogar.</p>
+        </div>
+    </footer>
+
+    <script src="carrusel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+    <script src="buscador.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('header');
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            if (!header || !menuToggle) return;
+
+            menuToggle.addEventListener('click', function () {
+                const isOpen = header.classList.toggle('menu-open');
+                menuToggle.setAttribute('aria-expanded', isOpen);
+                menuToggle.textContent = isOpen ? '✕' : '☰';
+            });
+        });
+    </script>
+</body>
+
+</html>

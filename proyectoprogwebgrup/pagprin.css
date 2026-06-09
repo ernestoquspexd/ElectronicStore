@@ -1,0 +1,90 @@
+.dropdown-menu.dark-menu {
+  background-color: #343a40;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.25rem 0;
+  min-width: 200px;
+}
+
+
+.dropdown-menu.dark-menu .dropdown-item {
+  color: #f8f9fa;
+  padding: 0.6rem 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+
+.dropdown-menu.dark-menu .dropdown-item:hover,
+.dropdown-menu.dark-menu .dropdown-item:focus {
+  background-color: #495057;
+  color: #fff;
+}
+
+
+.dropdown-menu.dark-menu .dropdown-item:active {
+  background-color: #212529;
+  color: #ffc107;
+}
+
+
+.dropdown-menu.dark-menu .dropdown-divider {
+  border-top: 1px solid #6c757d;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #ffff01 0%, #db360d 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#inicio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#carouselExampleIndicators .carousel-item img {
+  height: 400px;
+  object-fit: cover;
+}
+
+#inicio .title-box {
+  background-color: #2a2929;
+  color: #ffc107;
+  padding: 20px 40px;
+  text-align: center;
+  border-radius: 8px
+}
+
+#inicio .title-box h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+#inicio {
+  padding-top: 5px;
+  padding-bottom: 45px;
+}
+
+footer {
+  background: linear-gradient(135deg, #ffc001 0%, #db360d 100%);
+  color: white;
+}
+
+:root {
+  --primary-color: rgb(129, 122, 22);
+  --secondary-color: #fff59d;
+  --accent-color: #ffc107;
+  --light-color: #FFF8DC;
+  --dark-color: #654321;
+}

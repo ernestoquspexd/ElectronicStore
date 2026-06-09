@@ -1,0 +1,469 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CellStore - Venta de Celulares</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                     <i class="bi bi-laptop"></i>ElectronicStore
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos">Celulares</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ofertas">Ofertas</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
+                        <a href="#carrito" class="btn btn-outline-light rounded-pill d-flex align-items-center justify-content-center position-relative p-2" aria-label="Carrito de compras">
+                            <i class="bi bi-cart-fill fs-5"></i>
+                            <span id="cartCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display:none; width:1.5rem; height:1.5rem; font-size:0.75rem;">0</span>
+                            <span class="visually-hidden">Carrito</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <section id="inicio" class="hero py-5">
+        <div class="container py-5">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-6 text-center text-lg-start hero-copy">
+                    <span class="badge bg-primary mb-3">Top 2026</span>
+                    <h1 class="display-4 fw-bold">
+                        Los Mejores Celulares del Mercado
+                    </h1>
+                    <p class="lead mb-4">
+                        Encuentra iPhone, Samsung, Xiaomi y más con ofertas exclusivas.
+                    </p>
+                    <a href="#productos" class="btn btn-light btn-lg shadow-sm">
+                        Ver Catálogo
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+                    <div id="carouselPhones" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselPhones" data-bs-slide-to="0" class="active" aria-current="true" aria-label="iPhone"></button>
+                            <button type="button" data-bs-target="#carouselPhones" data-bs-slide-to="1" aria-label="Samsung"></button>
+                            <button type="button" data-bs-target="#carouselPhones" data-bs-slide-to="2" aria-label="Xiaomi"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://i.pinimg.com/1200x/aa/fe/5b/aafe5b3eee0376af83680c2348038b42.jpg" class="d-block w-100" alt="iPhone 15 Pro">
+                                <div class="carousel-caption d-none d-md-block text-start">
+                                    <h5>iPhone 15 Pro</h5>
+                                    <p>Diseño premium y rendimiento de alto nivel.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf" class="d-block w-100" alt="Samsung S24 Ultra">
+                                <div class="carousel-caption d-none d-md-block text-start">
+                                    <h5>Samsung S24 Ultra</h5>
+                                    <p>Cámara profesional para tus mejores fotos.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.pinimg.com/1200x/84/da/1d/84da1d8483a4ceb79d7911beef2f3d52.jpg" class="d-block w-100" alt="Xiaomi 14">
+                                <div class="carousel-caption d-none d-md-block text-start">
+                                    <h5>Xiaomi 14</h5>
+                                    <p>Gran potencia y excelente relación precio-calidad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPhones" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPhones" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="productos" class="container py-5">
+        <h2 class="text-center mb-5">Celulares Destacados</h2>
+
+        <div class="row g-4">
+
+            <!-- Producto 1 -->
+            <div class="col-md-4">
+                <div class="card producto-card shadow">
+                    <img src="https://i.pinimg.com/736x/29/cc/db/29ccdb926528ad2d8ae195e39d92a9a3.jpg"
+                        class="card-img-top"
+                        alt="iPhone">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">iPhone 17 Pro</h5>
+
+                        <p class="card-text">
+                            Potencia y elegancia en un solo dispositivo.
+                        </p>
+
+                        <h4 class="precio">$1200</h4>
+
+                        <div class="d-flex justify-content-center gap-2">
+                            <button type="button" class="btn btn-outline-primary btn-sm add-to-cart" data-product-id="iphone-17-pro" data-product-name="iPhone 17 Pro" data-product-price="1200" aria-label="Agregar iPhone 17 Pro">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                            <button class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card producto-card shadow">
+                    <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf"
+                        class="card-img-top"
+                        alt="Samsung">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Samsung S24 Ultra</h5>
+
+                        <p class="card-text">
+                            Cámara profesional y alto rendimiento.
+                        </p>
+
+                        <h4 class="precio">$1100</h4>
+
+                        <div class="d-flex justify-content-center gap-2">
+                            <button type="button" class="btn btn-outline-primary btn-sm add-to-cart" data-product-id="samsung-s24-ultra" data-product-name="Samsung S24 Ultra" data-product-price="1100" aria-label="Agregar Samsung S24 Ultra">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                            <button class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-md-4">
+                <div class="card producto-card shadow">
+                    <img src="https://i.pinimg.com/1200x/84/da/1d/84da1d8483a4ceb79d7911beef2f3d52.jpg"
+                        class="card-img-top"
+                        alt="Xiaomi">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Xiaomi 14</h5>
+
+                        <p class="card-text">
+                            Calidad premium a menor precio.
+                        </p>
+
+                        <h4 class="precio">$850</h4>
+
+                        <div class="d-flex justify-content-center gap-2">
+                            <button type="button" class="btn btn-outline-primary btn-sm add-to-cart" data-product-id="xiaomi-14" data-product-name="Xiaomi 14" data-product-price="850" aria-label="Agregar Xiaomi 14">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
+                            <button class="btn btn-primary">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section id="ofertas" class="ofertas text-white text-center py-5">
+        <div class="container">
+            <h2>🔥 Ofertas Especiales</h2>
+
+            <p>
+                Hasta 30% de descuento en equipos seleccionados.
+            </p>
+
+            <button id="btnVerOfertas" class="btn btn-warning">
+                Ver Ofertas
+            </button>
+
+            <div id="ofertasDetalles" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center mt-5" style="display: none;">
+                <div class="col">
+                    <div class="card bg-white text-dark border-0 shadow-sm rounded-4">
+                        <img src="https://i.pinimg.com/1200x/95/42/9f/95429f7ae65c27933d7faabb2018674a.jpg" alt="iPhone 15 Pro" class="card-img-top oferta-img">
+                        <div class="card-body">
+                            <h5 class="card-title">iPhone 15 Pro</h5>
+                            <span class="badge bg-danger mb-3">25% OFF</span>
+                            <p class="card-text">Precio normal $1,199, ahora solo $899 con envío gratis.</p>
+                            <p class="fw-bold text-success">Ahorra $300</p>
+                            <div class="oferta-colores">
+                                <span>Colores:</span>
+                                <div class="color-dot color-dot--silver" title="Plata"></div>
+                                <div class="color-dot color-dot--black" title="Negro"></div>
+                                <div class="color-dot color-dot--gold" title="Dorado"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-white text-dark border-0 shadow-sm rounded-4">
+                        <img src="https://i.pinimg.com/736x/6f/e6/ef/6fe6efbac9c374178ebef72d1ab8114f.jpg" alt="Samsung S24 Ultra" class="card-img-top oferta-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung S24 Ultra</h5>
+                            <span class="badge bg-danger mb-3">20% OFF</span>
+                            <p class="card-text">Precio normal $1,035, ahora $829. Oferta en color negro estelar.</p>
+                            <p class="fw-bold text-success">Ahorra $206</p>
+                            <div class="oferta-colores">
+                                <span>Colores:</span>
+                                <div class="color-dot color-dot--black" title="Negro"></div>
+                                <div class="color-dot color-dot--white" title="Blanco"></div>
+                                <div class="color-dot color-dot--violet" title="Violeta"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-white text-dark border-0 shadow-sm rounded-4">
+                        <img src="https://i.pinimg.com/1200x/db/f0/98/dbf098ecbc8582d39576c45be7cb86af.jpg" alt="Xiaomi 14" class="card-img-top oferta-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Xiaomi 14</h5>
+                            <span class="badge bg-danger mb-3">30% OFF</span>
+                            <p class="card-text">Precio normal $857, ahora $599 con cargador rápido incluido.</p>
+                            <p class="fw-bold text-success">Ahorra $258</p>
+                            <div class="oferta-colores">
+                                <span>Colores:</span>
+                                <div class="color-dot color-dot--blue" title="Azul"></div>
+                                <div class="color-dot color-dot--black" title="Negro"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-white text-dark border-0 shadow-sm rounded-4">
+                        <img src="https://i.pinimg.com/736x/a0/af/71/a0af7104745738f16f3eb6deee633f50.jpg" alt="OnePlus 12" class="card-img-top oferta-img">
+                        <div class="card-body">
+                            <h5 class="card-title">OnePlus 12</h5>
+                            <span class="badge bg-danger mb-3">15% OFF</span>
+                            <p class="card-text">Precio normal $880, ahora $749. Gran oferta para gamers.</p>
+                            <p class="fw-bold text-success">Ahorra $131</p>
+                            <div class="oferta-colores">
+                                <span>Colores:</span>
+                                <div class="color-dot color-dot--black" title="Negro"></div>
+                                <div class="color-dot color-dot--green" title="Verde"></div>
+                                <div class="color-dot color-dot--red" title="Rojo"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-white text-dark border-0 shadow-sm rounded-4">
+                        <img src="https://i.pinimg.com/1200x/e9/09/8e/e9098e9383ea3c043f2adcd34c9cdef7.jpg" alt="Motorola Edge 50" class="card-img-top oferta-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Motorola Edge 50</h5>
+                            <span class="badge bg-danger mb-3">18% OFF</span>
+                            <p class="card-text">Precio normal $609, ahora $499 con pantalla OLED y carga rápida.</p>
+                            <p class="fw-bold text-success">Ahorra $110</p>
+                            <div class="oferta-colores">
+                                <span>Colores:</span>
+                                <div class="color-dot color-dot--gray" title="Gris"></div>
+                                <div class="color-dot color-dot--blue" title="Azul"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-white text-dark border-0 shadow-sm rounded-4">
+                        <img src="https://i.pinimg.com/736x/ed/01/02/ed01027c389c899ab3521b1762420124.jpg" alt="Poco X6 Pro" class="card-img-top oferta-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Poco X6 Pro</h5>
+                            <span class="badge bg-danger mb-3">22% OFF</span>
+                            <p class="card-text">Precio normal $509, ahora $399. Incluye garantía extendida.</p>
+                            <p class="fw-bold text-success">Ahorra $110</p>
+                            <div class="oferta-colores">
+                                <span>Colores:</span>
+                                <div class="color-dot color-dot--black" title="Negro"></div>
+                                <div class="color-dot color-dot--yellow" title="Amarillo"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="marcas" class="container py-5">
+        <h2 class="text-center mb-4">Marcas Disponibles</h2>
+
+        <div class="row text-center">
+
+            <div class="col-md-3">
+                <div class="marca-box">
+                    Apple
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="marca-box">
+                    Samsung
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="marca-box">
+                    Xiaomi
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="marca-box">
+                    Motorola
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0"> 
+                    <h3 class="mb-4">
+                       <i class="bi bi-laptop"></i>ElectronicStore
+                    </h3>
+                    <p class="text-muted">
+                        Tu tienda virtual favorita para conseguir tus artículos electrónicos preferidos.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-whatsapp fs-4"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="mb-4">Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#inicio" class="text-muted text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="#menu" class="text-muted text-decoration-none">Menú</a></li>
+                        <li class="mb-2"><a href="#nosotros" class="text-muted text-decoration-none">Nosotros</a></li>
+                        <li class="mb-2"><a href="#testimonios" class="text-muted text-decoration-none">Testimonios</a>
+                        </li>
+                        <li class="mb-2"><a href="#contacto" class="text-muted text-decoration-none">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 mb-4 mb-md-0">
+                    <h5 class="mb-4">Menú</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Computadoras Portátiles</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Electrodomésticos</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Celulares</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Consolas de Videojuegos</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Promociones</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="mb-4">Hoja informativa</h5>
+                    <p class="text-muted mb-3">Suscríbete para recibir ofertas especiales y novedades.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Tu email">
+                        <button class="btn btn-warning  " type="button">
+                            <i class="bi bi-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-secondary">
+
+            <div class="text-center text-muted">
+                <p class="mb-0">© 2026 ElectronicStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const carrito = [];
+        const cartCount = document.getElementById('cartCount');
+
+        function actualizarContador() {
+            cartCount.textContent = carrito.length;
+            cartCount.style.display = carrito.length > 0 ? 'inline-flex' : 'none';
+        }
+
+        function agregarAlCarrito(producto) {
+            carrito.push(producto);
+            actualizarContador();
+            alert(producto.nombre + ' agregado al carrito');
+        }
+
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const producto = {
+                    id: button.dataset.productId,
+                    nombre: button.dataset.productName,
+                    precio: button.dataset.productPrice
+                };
+                agregarAlCarrito(producto);
+            });
+        });
+
+        const btnVerOfertas = document.getElementById('btnVerOfertas');
+        const ofertasDetalles = document.getElementById('ofertasDetalles');
+
+        if (btnVerOfertas && ofertasDetalles) {
+            btnVerOfertas.addEventListener('click', () => {
+                const mostrar = ofertasDetalles.style.display === 'none';
+                ofertasDetalles.style.display = mostrar ? 'flex' : 'none';
+                btnVerOfertas.textContent = mostrar ? 'Aprovecha ahora 😎👇' : 'Ver Ofertas';
+            });
+        }
+
+        actualizarContador();
+    </script>
+
+</body>
+</html>

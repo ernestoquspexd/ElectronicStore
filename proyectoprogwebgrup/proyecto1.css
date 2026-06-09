@@ -1,0 +1,40 @@
+  :root {
+      --primary-color: #db360d;
+      --secondary-color: #ffff01;
+      --tertiary-color: #000000;
+      --accent-color: #ffffff;
+      --light-color: #ffe88c;
+      --dark-color: #FFC107;
+  }
+
+  .carousel-item img {
+    height: 550px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .card img {
+    height: 220px;
+    object-fit: contain;
+    padding: 15px;
+  }
+
+  .card {
+    transition: transform 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+  }
+
+  footer {
+      background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+      color:white;
+  }
+
+  body {
+      background: linear-gradient(135deg, var(--accent-color) 0%, var(--light-color) 100%);
+      color:white;
+  }
+
+

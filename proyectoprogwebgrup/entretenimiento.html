@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="categorias.css">
+    <title>Entretenimiento y Tecnología</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="empresa">
+            <img src="Imágenes/logo.png" alt="Logo Volt Store">
+            <div class="titulo">
+                <h1>Entretenimiento y Tecnología</h1>
+                <h2>Siempre a la vanguardia</h2>
+            </div>
+        </div>
+
+        <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
+    
+        <ul>
+            <li><a href="elecDom.html">Volt Store</a></li>
+            <li class="dropdown">
+                <a href="#">Categorías</a>
+                <ul>
+                    <li><a href="#televisores">Televisores</a></li>
+                    <li><a href="#audio">Audio y Sonido</a></li>
+                    <li><a href="#domotica">Domótica</a></li>
+                </ul>
+            </li>
+            <li><a href="#vendidos">Más vendidos</a></li>
+            <li><a href="#final">Contactos</a></li>
+            <li>
+                <input type="text" id="buscar" placeholder="Buscar...">
+            </li>
+    
+            <li class="auth-li-group">
+                <a href="carrito.html" class="btn-login-nav">Carrito</a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="titulo">
+        <h1>Entretenimiento y Tecnología</h1>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#televisores">
+                        <img src="Imágenes/tecnología/cara1.png" class="d-block w-100" alt="Televisores de última generación">
+                    </a>
+                    <div class="carousel-caption d-block">
+                        <h5>Televisores de última generación</h5>
+                        <p>Descubre pantallas con imagen 4K y sonido inmersivo.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#audio">
+                        <img src="Imágenes/tecnología/cara2.png" class="d-block w-100" alt="Sistemas de audio premium">
+                    </a>
+                    <div class="carousel-caption d-block">
+                        <h5>Audio y Sonido</h5>
+                        <p>Altavoces, barras de sonido y auriculares para cada espacio.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#domotica">
+                        <img src="Imágenes/tecnología/cara3.png" class="d-block w-100" alt="Domótica y Smart Home">
+                    </a>
+                    <div class="carousel-caption d-block">
+                        <h5>Domótica Smart Home</h5>
+                        <p>Controla tu hogar con dispositivos inteligentes conectados.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="catalogo">
+        <div class="seccion-titulo" id="televisores">
+            <h2>Televisores</h2>
+            <hr>
+        </div>
+
+        <div class="card" data-categoria="televisores" data-id="prod-001">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ELG%204K%3C/text%3E%3C/svg%3E" alt="Televisor LG OLED">
+            <div class="cuerpo">
+                <h2>TV OLED LG C3 55"</h2>
+                <h4>LG</h4>
+                <hr>
+                <ul>
+                    <li>Pantalla OLED 4K con Dolby Vision y HDR10 Pro.</li>
+                    <li>Procesador α9 Gen6 para imagen ultra fluida.</li>
+                    <li>WebOS integrado con asistentes de voz y juegos.</li>
+                </ul>
+                <p>Precio: Bs. 9,200</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="televisores" data-id="prod-002">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESony%2055%22%3C/text%3E%3C/svg%3E" alt="Televisor Sony Bravia">
+            <div class="cuerpo">
+                <h2>TV Sony Bravia XR 55"</h2>
+                <h4>Sony</h4>
+                <hr>
+                <ul>
+                    <li>Resolución 4K con Cognitive Processor XR.</li>
+                    <li>XR Triluminos Pro para colores más reales.</li>
+                    <li>Acoustic Surface Audio+ para sonido integrado en pantalla.</li>
+                </ul>
+                <p>Precio: Bs. 10,800</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="televisores" data-id="prod-003">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESamsung%2075%22%3C/text%3E%3C/svg%3E" alt="Televisor Samsung QLED">
+            <div class="cuerpo">
+                <h2>TV Samsung QLED Q60B 65"</h2>
+                <h4>Samsung</h4>
+                <hr>
+                <ul>
+                    <li>Quantum HDR y Dual LED para contraste intenso.</li>
+                    <li>Tizen OS con acceso rápido a streaming y juegos.</li>
+                    <li>Motion Xcelerator Turbo para deportes y acción.</li>
+                </ul>
+                <p>Precio: Bs. 8,100</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="televisores" data-id="prod-004">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EVizio%2070%22%3C/text%3E%3C/svg%3E" alt="Televisor Hisense ULED">
+            <div class="cuerpo">
+                <h2>TV Hisense ULED 70"</h2>
+                <h4>Hisense</h4>
+                <hr>
+                <ul>
+                    <li>ULED con Dolby Vision y HDR10+.</li>
+                    <li>Vidaa U con aplicaciones de cine y deportes.</li>
+                    <li>Sonido DTS Virtual:X para audio envolvente.</li>
+                </ul>
+                <p>Precio: Bs. 6,700</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="televisores" data-id="prod-005">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EAOC%2070%22%3C/text%3E%3C/svg%3E" alt="Televisor AOC Smart TV">
+            <div class="cuerpo">
+                <h2>TV AOC Smart 70"</h2>
+                <h4>AOC</h4>
+                <hr>
+                <ul>
+                    <li>Smart TV con Android integrado y 4K real.</li>
+                    <li>Estilo ultra slim y conexiones HDMI 2.1.</li>
+                    <li>Calidad de imagen mejorada con Modo Juego.</li>
+                </ul>
+                <p>Precio: Bs. 5,790</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-titulo" id="audio">
+            <h2>Audio y Sonido</h2>
+            <hr>
+        </div>
+
+        <div class="card" data-categoria="audio" data-id="prod-006">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EBose%20Soundbar%3C/text%3E%3C/svg%3E" alt="Bose Soundbar">
+            <div class="cuerpo">
+                <h2>Bose Smart Soundbar 600</h2>
+                <h4>Bose</h4>
+                <hr>
+                <ul>
+                    <li>Barra de sonido con Dolby Atmos y Alexa integrada.</li>
+                    <li>Conectividad Wi-Fi y Bluetooth multizona.</li>
+                    <li>Control por app y calibración de audio ADAPTiQ.</li>
+                </ul>
+                <p>Precio: Bs. 4,150</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="audio" data-id="prod-007">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESony%20Headphones%3C/text%3E%3C/svg%3E" alt="Auriculares Sony">
+            <div class="cuerpo">
+                <h2>Auriculares Sony WH-1000XM5</h2>
+                <h4>Sony</h4>
+                <hr>
+                <ul>
+                    <li>Cancelación activa de ruido líder en la industria.</li>
+                    <li>Sonido Hi-Res y batería de hasta 30 horas.</li>
+                    <li>Diseño cómodo con controles táctiles y asistente por voz.</li>
+                </ul>
+                <p>Precio: Bs. 2,650</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="audio" data-id="prod-008">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESonos%20One%3C/text%3E%3C/svg%3E" alt="Sonos One">
+            <div class="cuerpo">
+                <h2>Sonos One SL</h2>
+                <h4>Sonos</h4>
+                <hr>
+                <ul>
+                    <li>Altavoz inalámbrico con sonido profundo y nítido.</li>
+                    <li>Compatible con Apple AirPlay 2 y control por voz opcional.</li>
+                    <li>Multiroom integrado para conectar varios altavoces.</li>
+                </ul>
+                <p>Precio: Bs. 2,200</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="audio" data-id="prod-009">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESoundcore%203D%3C/text%3E%3C/svg%3E" alt="Soundcore Altavoz">
+            <div class="cuerpo">
+                <h2>Altavoz Soundcore Motion+</h2>
+                <h4>Soundcore</h4>
+                <hr>
+                <ul>
+                    <li>Altavoz Bluetooth con sonido hi-fi y graves reforzados.</li>
+                    <li>Resistente al agua IPX7 y batería de 12 horas.</li>
+                    <li>Conexión dual para emparejar dos altavoces en estéreo.</li>
+                </ul>
+                <p>Precio: Bs. 1,050</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="audio" data-id="prod-010">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EBose%20QuietComfort%3C/text%3E%3C/svg%3E" alt="Auriculares Bose">
+            <div class="cuerpo">
+                <h2>Auriculares Bose QuietComfort 45</h2>
+                <h4>Bose</h4>
+                <hr>
+                <ul>
+                    <li>Stop noise cancellation para música y llamadas sin distracciones.</li>
+                    <li>Confortable diseño ligero y batería de hasta 24 horas.</li>
+                    <li>Conectividad multipunto y modo aware para escuchar el entorno.
+</li>
+                </ul>
+                <p>Precio: Bs. 2,710</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion-titulo" id="domotica">
+            <h2>Domótica</h2>
+            <hr>
+        </div>
+
+        <div class="card" data-categoria="domotica" data-id="prod-011">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESmart%20Hub%3C/text%3E%3C/svg%3E" alt="Central domótica Samsung">
+            <div class="cuerpo">
+                <h2>Samsung SmartThings Hub</h2>
+                <h4>Samsung</h4>
+                <hr>
+                <ul>
+                    <li>Central domótica compatible con Zigbee, Z-Wave y Wi-Fi.</li>
+                    <li>Automatiza luces, cerraduras y cámaras desde una app.</li>
+                    <li>Escenas programables y comandos por voz con asistentes.
+</li>
+                </ul>
+                <p>Precio: Bs. 1,420</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="domotica" data-id="prod-012">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESmart%20Light%3C/text%3E%3C/svg%3E" alt="Bombilla inteligente Philips Hue">
+            <div class="cuerpo">
+                <h2>Kit Philips Hue</h2>
+                <h4>Philips</h4>
+                <hr>
+                <ul>
+                    <li>Kit de iluminación inteligente con tres bombillas y puente Hue.</li>
+                    <li>Control por app, programación y sincronización con música.</li>
+                    <li>Compatibilidad con Alexa, Google Home y Apple HomeKit.</li>
+                </ul>
+                <p>Precio: Bs. 1,580</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="domotica" data-id="prod-013">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESmart%20Lock%3C/text%3E%3C/svg%3E" alt="Cerradura inteligente Yale">
+            <div class="cuerpo">
+                <h2>Cerradura Yale Assure</h2>
+                <h4>Yale</h4>
+                <hr>
+                <ul>
+                    <li>Cerradura inteligente con acceso por app y códigos de invitado.</li>
+                    <li>Integración con Alexa y Google Home para control por voz.</li>
+                    <li>Registro de entradas y salida para seguridad del hogar.
+</li>
+                </ul>
+                <p>Precio: Bs. 1,980</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="domotica" data-id="prod-014">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ESmart%20Thermostat%3C/text%3E%3C/svg%3E" alt="Termostato Nest">
+            <div class="cuerpo">
+                <h2>Termostato Nest</h2>
+                <h4>Google Nest</h4>
+                <hr>
+                <ul>
+                    <li>Termostato inteligente con aprendizaje de hábitos.</li>
+                    <li>Optimiza consumo energético y controla desde app móvil.</li>
+                    <li>Compatible con calefacción y aire acondicionado de la casa.
+</li>
+                </ul>
+                <p>Precio: Bs. 3,200</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="domotica" data-id="prod-015">
+            <img src="data:image/svg+xml;%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3ECamera%20Ring%3C/text%3E%3C/svg%3E" alt="Cámara Ring">
+            <div class="cuerpo">
+                <h2>Cámara Ring Spotlight</h2>
+                <h4>Ring</h4>
+                <hr>
+                <ul>
+                    <li>Cámara de seguridad con alerta de movimiento y foco integrado.</li>
+                    <li>Video HD 1080p y comunicación bidireccional con micrófono.</li>
+                    <li>Grabación en la nube opcional y control desde app móvil.
+</li>
+                </ul>
+                <p>Precio: Bs. 1,650</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <footer id="final">
+        <div class="links">
+            <h4>Soporte y Legal</h4>
+            <ul>
+                <li><a href="#">Terminos</a></li>
+                <li><a href="#">Políticas</a></li>
+                <li><a href="#">Dudas</a></li>
+                <li><a href="#">Licencias</a></li>
+            </ul>
+        </div>
+    
+        <div class="siguenos">
+            <h3>Síguenos</h3>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/reel/DYrqUy2zILf/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" target="_blank">
+                        <img src="Imágenes/instagram.jpeg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://vt.tiktok.com/ZSxqK8bVp/" target="_blank">
+                        <img src="Imágenes/tiktok.jpeg" alt="TikTok">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="Imágenes/whatsapp.png" alt="Whatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/dQw4w9WgXcQ?list=RDdQw4w9WgXcQ" target="_blank">
+                        <img src="Imágenes/youtube.jpeg" alt="Youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="contactos">
+            <h3>Contáctanos</h3>
+    
+            <div class="bloque-contacto">
+                <img src="Imágenes/teléfono.jpeg" alt="Teléfono">
+                <div class="contenido-contacto">
+                    <h4>Teléfonos y celulares</h4>
+                    <p>☎️ +591 12345678</p>
+                    <p>☎️ +591 27486995</p>
+                    <br>
+                    <p>📲 62509273</p>
+                    <p>📲 64850359</p>
+                </div>
+            </div>
+    
+            <div class="bloque-contacto">
+                <img src="Imágenes/correo.jpeg" alt="Correo">
+                <div class="contenido-contacto">
+                    <h4>Correo electrónico</h4>
+                    <p>volttech@.equisde.com</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <p>&copy; 2026 Volt Store. Todos los derechos reservados. Diseñado para la vanguardia del hogar.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="buscador.js"></script>
+    <script src="carrito-storage.js"></script>
+    <script src="funciones.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('header');
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            if (!header || !menuToggle) return;
+
+            menuToggle.addEventListener('click', function () {
+                const isOpen = header.classList.toggle('menu-open');
+                menuToggle.setAttribute('aria-expanded', isOpen);
+                menuToggle.textContent = isOpen ? '✕' : '☰';
+            });
+        });
+    </script>
+</body>
+</html>

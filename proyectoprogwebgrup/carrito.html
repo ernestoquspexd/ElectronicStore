@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito | Volt Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="carrito.css">
+</head>
+
+<body>
+    <header>
+        <div class="empresa">
+            <img src="Imágenes/logo.png" alt="Logo Volt Store">
+            <div class="titulo">
+                <h1>Volt Store</h1>
+                <h2>Carrito de compra</h2>
+            </div>
+        </div>
+
+        <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
+
+        <ul>
+            <li><a href="elecDom.html">Inicio</a></li>
+            <li><a href="carrito.html" class="active">Carrito</a></li>
+            <li><a href="#final">Contactos</a></li>
+        </ul>
+    </header>
+
+    <main class="carrito-main">
+        <section class="hero-carrito">
+            <div>
+                <span class="tag">Revisa tu compra</span>
+                <h1>Tu carrito listo para confirmar</h1>
+                <p>Elige la cantidad, revisa el total y completa tus datos. El sistema te mostrará si falta algo o si el correo no es válido.</p>
+            </div>
+            <div class="hero-image-slot">
+                <div class="hero-image-mask">
+                    <img src="Imágenes/carrito.jpeg">
+                </div>
+            </div>
+        </section>
+
+        <div class="carrito-grid">
+            <section class="cart-section">
+                <div class="section-title">
+                    <h2>Productos en carrito</h2>
+                    <p>Modifica cantidades y observa el precio automático.</p>
+                </div>
+
+                <div class="cart-items" id="cartItems"></div>
+
+                <div class="empty-cart oculto">Tu carrito está vacío. Regresa a <a href="elecDom.html">Inicio</a> para agregar productos.</div>
+            </section>
+
+            <aside class="order-panel">
+                <div class="panel-card summary-card">
+                    <h2>Resumen del pedido</h2>
+                    <div class="order-row">
+                        <span>Productos seleccionados</span>
+                        <strong id="itemCount">2</strong>
+                    </div>
+                    <div class="order-row">
+                        <span>Total</span>
+                        <strong id="totalOrden">Bs. 6,000</strong>
+                    </div>
+                    <div class="order-note">El total se actualiza al cambiar cantidades. Si queda vacío, agrega más productos.</div>
+                </div>
+
+                <form id="checkoutForm" novalidate>
+                    <h2>Finalizar compra</h2>
+                    <label>
+                        Nombre completo
+                        <input type="text" name="nombre" id="nombre" required placeholder="Tu nombre completo">
+                    </label>
+                    <label>
+                        Correo electrónico
+                        <input type="email" name="email" id="email" required placeholder="ejemplo@correo.com">
+                    </label>
+                    <label>
+                        Dirección de envío
+                        <input type="text" name="direccion" id="direccion" required placeholder="Calle, número, zona">
+                    </label>
+                    <label>
+                        Ciudad
+                        <input type="text" name="ciudad" id="ciudad" required placeholder="La Paz, Santa Cruz...">
+                    </label>
+                    <label>
+                        Código postal
+                        <input type="text" name="codigo" id="codigo" required placeholder="0000">
+                    </label>
+                    <label>
+                        Número de tarjeta
+                        <input type="text" name="tarjeta" id="tarjeta" required placeholder="1234 5678 9012 3456" maxlength="19">
+                    </label>
+                    <button type="submit" class="checkout-btn">Confirmar compra</button>
+                </form>
+
+                <div class="status-panel" id="statusPanel">
+                    <h3>Estado del pedido</h3>
+                    <p id="statusText">Revisa los campos y confirma la compra. Si hay algo faltante o la tarjeta no tiene formato, te aviso aquí.</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer id="final">
+        <div class="footer-content">
+            <div>
+                <h3>Contacto</h3>
+                <p>📞 +591 12345678</p>
+                <p>📧 volttech@equisde.com</p>
+            </div>
+            <div>
+                <h3>Enlaces rápidos</h3>
+                <a href="elecDom.html">Inicio</a>
+                <a href="carrito.html">Carrito</a>
+            </div>
+        </div>
+        <p class="footer-note">© 2026 Volt Store. Compra segura y práctica en un solo lugar.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="carrito.js"></script>
+</body>
+
+</html>

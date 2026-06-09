@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="categorias.css">
+    <title>Cocina y línea blanca</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="empresa">
+            <img src="Imágenes/logo.png" alt="Logo Volt Store">
+            <div class="titulo">
+                <h1>Volt Store</h1>
+                <h2>Siempre a la vanguardia</h2>
+            </div>
+        </div>
+
+        <button class="menu-toggle" aria-expanded="false" aria-label="Abrir menú">☰</button>
+    
+        <ul>
+            <li><a href="elecDom.html">Volt Store</a></li>
+            <li class="dropdown">
+                <a href="#">Categorías</a>
+                <ul>
+                    <li><a href="#cocina">Cocinas y Cocción</a></li>
+                    <li><a href="#refrig">Refrigeración</a></li>
+                    <li><a href="#meson">Electrodomésticos de mesón</a></li>
+                </ul>
+            </li>
+            <li><a href="#vendidos">Más vendidos</a></li>
+            <li><a href="#final">Contactos</a></li>
+            <li>
+                <input type="text" id="buscar" placeholder="Buscar...">
+            </li>
+    
+            <li class="auth-li-group">
+                <a href="carrito.html" class="btn-login-nav">Carrito</a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="titulo">
+        <h1>Cocina y línea blanca</h1>
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="#cocina">
+                        <img src="Imágenes/cocina/cara1.png" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-block">
+                        <h5>Cocinas y cocción</h5>
+                        <p>Haz click para ver todas nuestras cocinas y aparatos de cocción.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#refrig">
+                        <img src="Imágenes/cocina/cara2.png" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-block">
+                        <h5>Refrigeración</h5>
+                        <p>Tu proximo refigerador está esperando por ti, a tan solo un clik en esta card</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <a href="#meson">
+                        <img src="Imágenes/cocina/cara3.png" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-block">
+                        <h5>Electrodomésticos de mesón</h5>
+                        <p>Necesitas ayuda en tu cocina? Haz click para ver nuestras opciones.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="catalogo">
+        
+<div class="seccion-titulo" id="cocina">
+            <h2>Cocinas y Cocción</h2>
+            <hr>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-001">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Cocina Bosch Pro</h2>
+                <h4>Bosch</h4>
+                <hr>
+                <ul>
+                    <li>Cocina a gas de 5 hornallas de alta eficiencia.</li>
+                    <li>Mesa de acero inoxidable cepillado de fácil limpieza.</li>
+                    <li>Encendido automático a una mano en quemadores y horno.</li>
+                </ul>
+                <p>Precio: Bs. 3,800</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-002">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Cocina Moderna Verona</h2>
+                <h4>Verona</h4>
+                <hr>
+                <ul>
+                    <li>Cocina a gas de 4 hornallas con quemadores sellados.</li>
+                    <li>Tapa superior de vidrio templado de alta resistencia.</li>
+                    <li>Parrillas individuales de hierro fundido estable.</li>
+                </ul>
+                <p>Precio: Bs. 2,400</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-003">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Cocina a Gas Premium</h2>
+                <h4>Indurama</h4>
+                <hr>
+                <ul>
+                    <li>6 hornallas con quemador triple corona central.</li>
+                    <li>Horno con sistema de asador giratorio y luz interior.</li>
+                    <li>Timer digital sonoro para control preciso del tiempo.</li>
+                </ul>
+                <p>Precio: Bs. 4,100</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-004">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Cocina de Pie Eléctrica</h2>
+                <h4>Frigidaire</h4>
+                <hr>
+                <ul>
+                    <li>4 elementos radiantes de calentamiento rápido.</li>
+                    <li>Horno autolimpiante con tecnología de convección fan.</li>
+                    <li>Cajón inferior de almacenamiento para ollas y sartenes.</li>
+                </ul>
+                <p>Precio: Bs. 5,200</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-005">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Cocina Eléctrica Vitrocerámica</h2>
+                <h4>Midea</h4>
+                <hr>
+                <ul>
+                    <li>Cocina eléctrica de piso independiente con horno integrado.</li>
+                    <li>Cubierta superior lisa vitrocerámica con 4 focos radiantes.</li>
+                    <li>Indicador luminoso exterior de seguridad para calor residual.</li>
+                </ul>
+                <p>Precio: Bs. 3,400</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-006">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Encimera Penta Gas</h2>
+                <h4>Tramontina</h4>
+                <hr>
+                <ul>
+                    <li>Cooktop de gas con 5 focos para empotrar.</li>
+                    <li>Superficie elegante de vidrio templado negro de alta densidad.</li>
+                    <li>Encendido superautomático integrado en las perillas de control.</li>
+                </ul>
+                <p>Precio: Bs. 1,650</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-007">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Encimera de Inducción</h2>
+                <h4>Whirlpool</h4>
+                <hr>
+                <ul>
+                    <li>Superficie vitrocerámica con 4 zonas de inducción táctiles.</li>
+                    <li>Control deslizable independiente para niveles de potencia exactos.</li>
+                    <li>Función Booster de calentamiento rápido de máxima potencia.</li>
+                </ul>
+                <p>Precio: Bs. 2,900</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-008">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Campana Extractora Decorativa</h2>
+                <h4>Bosch</h4>
+                <hr>
+                <ul>
+                    <li>Extractor de grasa purificador diseñado para instalación de pared.</li>
+                    <li>Capacidad máxima de extracción potente de 700 m³/h.</li>
+                    <li>3 velocidades de funcionamiento con controles por botones físicos.</li>
+                </ul>
+                <p>Precio: Bs. 2,000</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-009">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Campana de Isla Premium</h2>
+                <h4>Teka</h4>
+                <hr>
+                <ul>
+                    <li>Diseño cilíndrico suspendido en acero inoxidable reforzado.</li>
+                    <li>Extracción perimetral de alta potencia con bajo nivel de ruido.</li>
+                    <li>Iluminación ambiental LED regulable integrada en la base.</li>
+                </ul>
+                <p>Precio: Bs. 3,150</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-010">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Cocina Compacta Urban</h2>
+                <h4>Mabe</h4>
+                <hr>
+                <ul>
+                    <li>4 hornallas estándar con encendido por botón manual.</li>
+                    <li>Horno con tecnología Perfect Cook para calor uniforme.</li>
+                    <li>Puerta con vidrio panorámico y jalador de una sola pieza.</li>
+                </ul>
+                <p>Precio: Bs. 1,850</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-011">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Horno a Gas Empotrable</h2>
+                <h4>Longvie</h4>
+                <hr>
+                <ul>
+                    <li>Horno para empotrar en pared con encendido electrónico a una mano.</li>
+                    <li>Doble aislamiento de lana de vidrio para conservar el calor térmico.</li>
+                    <li>Grill eléctrico superior para un dorado y gratil perfecto.</li>
+                </ul>
+                <p>Precio: Bs. 2,750</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-012">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Encimera de Vidrio a Gas</h2>
+                <h4>Midea</h4>
+                <hr>
+                <ul>
+                    <li>4 hornallas dispuestas sobre base plana de vidrio templado negro.</li>
+                    <li>Quemador triple llama de alta velocidad para cocciones rápidas.</li>
+                    <li>Parrillas individuales de acero fundido con gomas de estabilidad.</li>
+                </ul>
+                <p>Precio: Bs. 1,350</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-013">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Cocina Semi-Industrial Pro</h2>
+                <h4>Dako</h4>
+                <hr>
+                <ul>
+                    <li>2 quemadores dobles gigantes de alta presión estructural.</li>
+                    <li>Estructura reforzada de acero al carbono ideal para ollas grandes.</li>
+                    <li>Bandeja recolectora de residuos inferior de fácil remoción.</li>
+                </ul>
+                <p>Precio: Bs. 2,100</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-014">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Campana de Pared Slim</h2>
+                <h4>Sole</h4>
+                <hr>
+                <ul>
+                    <li>Diseño ultra delgado retráctil para bajo mueble de cocina.</li>
+                    <li>Doble motor de extracción con filtros de carbón activado.</li>
+                    <li>Visera de vidrio móvil para direccionar el humo de cocción.</li>
+                </ul>
+                <p>Precio: Bs. 950</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="cocina" data-id="prod-015">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Cocina Master Cooker</h2>
+                <h4>Electrolux</h4>
+                <hr>
+                <ul>
+                    <li>5 hornallas con triple llama y encendido automático directo.</li>
+                    <li>Horno gigante con dos parrillas deslizantes independientes.</li>
+                    <li>Sistema corta-gas de seguridad en hornallas y horno integrado.</li>
+                </ul>
+                <p>Precio: Bs. 3,950</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="seccion-titulo" id="refrig">
+            <h2>Refrigeración</h2>
+            <hr>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-016">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Refrigerador Side by Side</h2>
+                <h4>Samsung</h4>
+                <hr>
+                <ul>
+                    <li>Capacidad neta de 520 litros con tecnología No Frost.</li>
+                    <li>Compresor Digital Inverter con optimización de energía.</li>
+                    <li>Dispensador externo de agua filtrada y hielo en cubos.</li>
+                </ul>
+                <p>Precio: Bs. 7,500</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-017">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Refrigerador Top Mount</h2>
+                <h4>LG</h4>
+                <hr>
+                <ul>
+                    <li>Capacidad de 395 litros con congelador superior.</li>
+                    <li>Sistema Multi Air Flow para enfriamiento uniforme rápido.</li>
+                    <li>Filtro higiénico Hygiene Fresh que elimina bacterias.</li>
+                </ul>
+                <p>Precio: Bs. 4,900</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-018">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Refrigerador French Door</h2>
+                <h4>Whirlpool</h4>
+                <hr>
+                <ul>
+                    <li>Capacidad masiva de 580 litros con tres puertas premium.</li>
+                    <li>Sistema de evaporadores independientes para evitar olores.</li>
+                    <li>Iluminación LED panorámica en todo el compartimento.</li>
+                </ul>
+                <p>Precio: Bs. 9,200</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-019">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Frigobar Ejecutivo Compacto</h2>
+                <h4>Midea</h4>
+                <hr>
+                <ul>
+                    <li>Capacidad interna de 95 litros ideal para oficinas.</li>
+                    <li>Compartimento interno de congelación rápida para hielo.</li>
+                    <li>Termostato mecánico ajustable para control interno.</li>
+                </ul>
+                <p>Precio: Bs. 1,150</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-020">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Freezer Horizontal Dual</h2>
+                <h4>Consul</h4>
+                <hr>
+                <ul>
+                    <li>Capacidad de 310 litros con doble función (freezer o heladera).</li>
+                    <li>Drenaje frontal para facilitar la limpieza y descongelado.</li>
+                    <li>Ruedas de alta resistencia para un movimiento sencillo.</li>
+                </ul>
+                <p>Precio: Bs. 2,800</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-021">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Refrigerador Bottom Mount</h2>
+                <h4>Panasonic</h4>
+                <hr>
+                <ul>
+                    <li>Freezer en la parte inferior para un acceso cómodo.</li>
+                    <li>Tecnología Econavi que monitorea el uso diario para ahorrar.</li>
+                    <li>Cajón Fresh Safe que retiene la humedad de los vegetales.</li>
+                </ul>
+                <p>Precio: Bs. 5,600</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-022">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Cava de Vinos Premium</h2>
+                <h4>Somela</h4>
+                <hr>
+                <ul>
+                    <li>Capacidad óptima para almacenar hasta 18 botellas de vino.</li>
+                    <li>Control digital de temperatura con panel touch exterior.</li>
+                    <li>Vidrio templado con protección UV para preservar calidad.</li>
+                </ul>
+                <p>Precio: Bs. 1,950</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-023">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Refrigerador No Frost Slim</h2>
+                <h4>Electrolux</h4>
+                <hr>
+                <ul>
+                    <li>Diseño angosto optimizado para cocinas de espacios reducidos.</li>
+                    <li>Panel táctil frontal con modos de enfriamiento rápido.</li>
+                    <li>Estantes retráctiles para acomodar envases de gran tamaño.</li>
+                </ul>
+                <p>Precio: Bs. 3,900</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-024">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Freezer Vertical Multi-Flow</h2>
+                <h4>Beko</h4>
+                <hr>
+                <ul>
+                    <li>6 cajones transparentes independientes de gran volumen.</li>
+                    <li>Alarma de puerta abierta sonoro integrada de fábrica.</li>
+                    <li>Congelamiento rápido en compartimento superior especial.</li>
+                </ul>
+                <p>Precio: Bs. 4,300</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-025">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Refrigerador Side Inverter</h2>
+                <h4>Hisense</h4>
+                <hr>
+                <ul>
+                    <li>Capacidad extendida de 560 litros con puertas planas.</li>
+                    <li>Flujo de aire múltiple surround para frescura total.</li>
+                    <li>Manijas integradas discretas con acabado mate moderno.</li>
+                </ul>
+                <p>Precio: Bs. 6,800</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-026">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Refrigerador Frost Free Dual</h2>
+                <h4>Gafa</h4>
+                <hr>
+                <ul>
+                    <li>Sistema Frost Free clásico de descongelamiento automático.</li>
+                    <li>Estantes tipo rejilla de alta resistencia mecánica regulables.</li>
+                    <li>Contenedor de hielos doble con sistema de torsión rápido.</li>
+                </ul>
+                <p>Precio: Bs. 2,950</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-027">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Freezer Horizontal Exhibidor</h2>
+                <h4>Metalfrio</h4>
+                <hr>
+                <ul>
+                    <li>Tapas de vidrio templado curvas deslizantes de alta visibilidad.</li>
+                    <li>Estructura interna de aluminio prepintado de grado comercial.</li>
+                    <li>Termostato analógico de alta precisión para frío extremo.</li>
+                </ul>
+                <p>Precio: Bs. 5,100</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-028">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Refrigerador Vintage Edition</h2>
+                <h4>Siam</h4>
+                <hr>
+                <ul>
+                    <li>Diseño retro clásico de los años 50 con manija cromada externa.</li>
+                    <li>Motor inverter moderno de alta eficiencia bajo caparazón retro.</li>
+                    <li>Estantes de vidrio templado con bordes dorados premium.</li>
+                </ul>
+                <p>Precio: Bs. 4,800</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-029">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Cava Vertical de Bebidas</h2>
+                <h4>Maigas</h4>
+                <hr>
+                <ul>
+                    <li>Puerta de triple vidrio con gas argón para evitar condensación.</li>
+                    <li>Iluminación vertical LED blanca que cubre todos los niveles.</li>
+                    <li>Parrillas de alambre reforzado ajustables en altura libre.</li>
+                </ul>
+                <p>Precio: Bs. 3,450</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="refrig" data-id="prod-030">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Refrigerador Quad Door Pro</h2>
+                <h4>Toshiba</h4>
+                <hr>
+                <ul>
+                    <li>4 puertas independientes con zonas de frío inteligente.</li>
+                    <li>Compartimento convertible de freezer a heladera digital.</li>
+                    <li>Sistema de esterilización de aire por plasma activo interno.</li>
+                </ul>
+                <p>Precio: Bs. 11,500</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="seccion-titulo" id="meson">
+            <h2>Electrodomésticos de Mesón</h2>
+            <hr>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-031">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Horno Digital Empotrable</h2>
+                <h4>Midea</h4>
+                <hr>
+                <ul>
+                    <li>Capacidad interna de 70 litros para bandejas grandes.</li>
+                    <li>Panel digital táctil con temporizador programable automático.</li>
+                    <li>Eficiencia energética clase A con triple vidrio templado.</li>
+                </ul>
+                <p>Precio: Bs. 1,980</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-032">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Microondas Inverter</h2>
+                <h4>Panasonic</h4>
+                <hr>
+                <ul>
+                    <li>Capacidad de 35 litros con plato giratorio amplio.</li>
+                    <li>Potencia de cocción real de 1200W de alta velocidad.</li>
+                    <li>Tecnología Inverter para descongelado uniforme.</li>
+                </ul>
+                <p>Precio: Bs. 1,500</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-033">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Freidora de Aire Digital</h2>
+                <h4>Philips</h4>
+                <hr>
+                <ul>
+                    <li>Capacidad familiar XL de 6.2 litros para cocciones grandes.</li>
+                    <li>Tecnología Rapid Air para frituras crujientes sin grasa.</li>
+                    <li>Pantalla táctil con 7 programas preestablecidos de fábrica.</li>
+                </ul>
+                <p>Precio: Bs. 1,250</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-034">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Licuadora de Alta Potencia</h2>
+                <h4>Oster</h4>
+                <hr>
+                <ul>
+                    <li>Motor reversible potente de 3 velocidades con pulso.</li>
+                    <li>Acople totalmente metálico All-Metal Drive duradero.</li>
+                    <li>Jarra de vidrio refractario resistente a choques térmicos.</li>
+                </ul>
+                <p>Precio: Bs. 680</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-035">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Horno de Convección Eléctrico</h2>
+                <h4>Oster</h4>
+                <hr>
+                <ul>
+                    <li>Horno eléctrico de mesón con turbo convección homogénea.</li>
+                    <li>Controles manuales giratorios ajustables hasta 230°C.</li>
+                    <li>Capacidad interna optimizada para dos pizzas medianas.</li>
+                </ul>
+                <p>Precio: Bs. 1,000</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-036">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Microondas NeoChef</h2>
+                <h4>LG</h4>
+                <hr>
+                <ul>
+                    <li>Microondas con grill de cuarzo potente integrado.</li>
+                    <li>Calentamiento lineal preciso mediante Smart Inverter.</li>
+                    <li>Interior EasyClean que evita adherencia de grasas.</li>
+                </ul>
+                <p>Precio: Bs. 1,400</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-037">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Cafetera Expresso Pro</h2>
+                <h4>Delonghi</h4>
+                <hr>
+                <ul>
+                    <li>Bomba de presión profesional italiana de 15 bares reales.</li>
+                    <li>Espumador de leche manual ajustable para capuchinos.</li>
+                    <li>Estructura externa robusta en acero inoxidable pulido.</li>
+                </ul>
+                <p>Precio: Bs. 2,450</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-038">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Batidora de Pedestal</h2>
+                <h4>KitchenAid</h4>
+                <hr>
+                <ul>
+                    <li>Movimiento planetario con 10 velocidades de mezcla.</li>
+                    <li>Tazón de acero inoxidable con capacidad de 4.8 litros.</li>
+                    <li>Cuerpo metálico fundido totalmente estable al batir.</li>
+                </ul>
+                <p>Precio: Bs. 3,600</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-039">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Tostadora Eléctrica Retro</h2>
+                <h4>Smeg</h4>
+                <hr>
+                <ul>
+                    <li>Ranuras extra anchas ideales para panes artesanales.</li>
+                    <li>6 niveles de dorado ajustables con palanca cromada.</li>
+                    <li>Bandeja recolectora de migas extraíble de acero.</li>
+                </ul>
+                <p>Precio: Bs. 1,100</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-040">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Hervidor Eléctrico Digital</h2>
+                <h4>Hamilton Beach</h4>
+                <hr>
+                <ul>
+                    <li>Capacidad de 1.7 litros con ventana de nivel de agua.</li>
+                    <li>Control de temperatura ajustable para diferentes tipos de té.</li>
+                    <li>Función de apagado automático por seguridad al hervir.</li>
+                </ul>
+                <p>Precio: Bs. 450</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-041">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Procesador de Alimentos</h2>
+                <h4>Black+Decker</h4>
+                <hr>
+                <ul>
+                    <li>Motor potente de 500W con sistema de pulsos integrados.</li>
+                    <li>Cuchillas de acero para picar, rebanar y rallar verduras.</li>
+                    <li>Recipiente de procesamiento transparente de 8 tazas fijas.</li>
+                </ul>
+                <p>Precio: Bs. 750</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-042">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Extractor de Jugos Pro</h2>
+                <h4>Philips</h4>
+                <hr>
+                <ul>
+                    <li>Tubo de alimentación extra ancho para frutas enteras completas.</li>
+                    <li>Tecnología QuickClean para limpieza del filtro en un minuto.</li>
+                    <li>Contenedor de pulpa integrado translúcido de gran tamaño.</li>
+                </ul>
+                <p>Precio: Bs. 1,300</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-043">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Arrocera Multiuso Digital</h2>
+                <h4>Recco</h4>
+                <hr>
+                <ul>
+                    <li>Capacidad interna de 1.8 litros con tazón antiadherente extraíble.</li>
+                    <li>Funciones automáticas para arroz blanco, integral y vaporera.</li>
+                    <li>Función térmica de mantenimiento de calor constante integrado.</li>
+                </ul>
+                <p>Precio: Bs. 380</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-044">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Sanduchera Grill Doble</h2>
+                <h4>Somela</h4>
+                <hr>
+                <ul>
+                    <li>Placas estriadas con revestimiento antiadherente de alta duración.</li>
+                    <li>Apertura completa de 180 grados para usar como parrilla plana.</li>
+                    <li>Luces indicadoras exteriores de encendido y temperatura óptima.</li>
+                </ul>
+                <p>Precio: Bs. 480</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" data-categoria="meson" data-id="prod-045">
+            <img src="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22380%22 height=%22240%22%3E%3Crect width=%22100%25%22 height=%22100%25%22 fill=%22%23ffffff%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 fill=%22%23000000%22 font-size=%2218%22 font-family=%22Arial%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22%3EProducto%3C/text%3E%3C/svg%3E" alt="Producto">
+            <div class="cuerpo">
+                <h2>Crepera Eléctrica de Mesa</h2>
+                <h4>Severin</h4>
+                <hr>
+                <ul>
+                    <li>Placa grande antiadherente de 30 cm de diámetro útil.</li>
+                    <li>Regulador de temperatura continuo con perilla frontal suave.</li>
+                    <li>Incluye espátula de madera y rodillo esparcidor de masa.</li>
+                </ul>
+                <p>Precio: Bs. 590</p>
+                <div class="card-botones">
+                    <button class="btn-ver-mas">Ver más</button>
+                    <button class="btn-carrito">🛒 Añadir</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <footer id="final">
+        <div class="links">
+            <h4>Soporte y Legal</h4>
+            <ul>
+                <li><a href="#">Terminos</a></li>
+                <li><a href="#">Políticas</a></li>
+                <li><a href="#">Dudas</a></li>
+                <li><a href="#">Licencias</a></li>
+            </ul>
+        </div>
+    
+        <div class="siguenos">
+            <h3>Síguenos</h3>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/reel/DYrqUy2zILf/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ==" target="_blank">
+                        <img src="Imágenes/instagram.jpeg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://vt.tiktok.com/ZSxqK8bVp/" target="_blank">
+                        <img src="Imágenes/tiktok.jpeg" alt="TikTok">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <img src="Imágenes/whatsapp.png" alt="Whatsapp">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://youtu.be/dQw4w9WgXcQ?list=RDdQw4w9WgXcQ" target="_blank">
+                        <img src="Imágenes/youtube.jpeg" alt="Youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="contactos">
+            <h3>Contáctanos</h3>
+    
+            <div class="bloque-contacto">
+                <img src="Imágenes/teléfono.jpeg" alt="Teléfono">
+                <div class="contenido-contacto">
+                    <h4>Teléfonos y celulares</h4>
+                    <p>☎️ +591 12345678</p>
+                    <p>☎️ +591 27486995</p>
+                    <br>
+                    <p>📲 62509273</p>
+                    <p>📲 64850359</p>
+                </div>
+            </div>
+    
+            <div class="bloque-contacto">
+                <img src="Imágenes/correo.jpeg" alt="Correo">
+                <div class="contenido-contacto">
+                    <h4>Correo electrónico</h4>
+                    <p>volttech@.equisde.com</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <p>&copy; 2026 Volt Store. Todos los derechos reservados. Diseñado para la vanguardia del hogar.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="buscador.js"></script>
+    <script src="carrito-storage.js"></script>
+    <script src="funciones.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('header');
+            const menuToggle = document.querySelector('.menu-toggle');
+
+            if (!header || !menuToggle) return;
+
+            menuToggle.addEventListener('click', function () {
+                const isOpen = header.classList.toggle('menu-open');
+                menuToggle.setAttribute('aria-expanded', isOpen);
+                menuToggle.textContent = isOpen ? '✕' : '☰';
+            });
+        });
+    </script>
+</body>
+</html>
